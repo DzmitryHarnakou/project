@@ -1,0 +1,42 @@
+<div class="movieDB__search-form-container">
+  <div class="movieDB__search-form-header-container">
+    <span class="movieDB__search-form-header">Advanced search</span>
+  </div>
+  <div class="movieDB__search-form-input-container">
+    <span class="movieDB__search-form-input-text">
+      Title
+    </span>
+    <input type="text" placeholder="Title">
+    <span class="movieDB__search-form-input-text">
+      Overview
+    </span>
+    <textarea rows="4">
+    </textarea>
+  </div>
+  <div class="movieDB__search-form-measuring-container">
+    <div class="movieDB__search-form-measuring-checkbox-container">
+      <input type="checkbox" id="movieDB__search-form-measuring-checkbox">
+      <label class="movieDB__search-form-input-text"> Adult</label>
+    </div>
+    <span class="movieDB__search-form-input-text">Popularity</span>
+    <progress value="22" max="100" class="movieDB__search-form-progres"></progress>
+    <span class="movieDB__search-form-input-text">Vote average</span>
+    <progress value="22" max="100" class="movieDB__search-form-progres"></progress>
+  </div>
+  <span class="movieDB__search-form-input-text movieDB__search-form-input-text--genre">
+    Genre
+  </span>
+  <div class="movieDB__search-form-checkboxes-container">
+    <div *ngFor="let l of labels" class="movieDB__search-form-checkboxes-w-labels">
+      <input type="checkbox" id="movieDB__search-form-measuring-checkbox">
+      <label class="movieDB__search-form-input-text"> {{l.text}}</label>
+    </div>
+  </div>
+  <div>
+    <div>
+      <input type="checkbox" id="movieDB__search-form-measuring-checkbox">
+      <label class="movieDB__search-form-input-text"> Remember inputs</label>
+    </div>
+    <input type="button" value="Search" class="movieDB__search-form-button">
+  </div>
+</div>
